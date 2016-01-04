@@ -11,7 +11,7 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"Australian Police Department Shop"];
+ctrlSetText[3103,"Altis Police Department Shop"];
 
 _ret = [];
 switch (_filter) do
@@ -75,6 +75,7 @@ switch (_filter) do
 			_ret pushBack ["U_B_FullGhillie_lsh",nil,600];
 			_ret pushBack ["U_B_FullGhillie_sard",nil,600];
 			_ret pushBack ["45KOso_black","SWAT Fatigues",500];
+			_ret pushBack ["U_B_CombatUniform_mcam",SWAT,600];
 		};
 
 		if(__GETC__(life_coplevel) == 7) then
@@ -89,6 +90,7 @@ switch (_filter) do
 			_ret pushBack ["U_B_FullGhillie_lsh",nil,600];
 			_ret pushBack ["U_B_FullGhillie_sard",nil,600];
 			_ret pushBack ["45KOso_black","SWAT Fatigues",500];
+			_ret pushBack ["U_B_CombatUniform_mcam",SWAT,600];
 		};
 
 		if(__GETC__(life_coplevel) == 8) then 
@@ -104,14 +106,9 @@ switch (_filter) do
 			_ret pushBack ["TRYK_B_USMC_R","Sheriff SWAT 2",200];
 			_ret pushBack ["U_B_Wetsuit","WetSuit",100];
 		};
-		
-		if(__GETC__(life_coplevel) == 10) then 
-		{
-			_ret pushBack ["doc","DOC Uniform",100];
-		};
 	};
 	
- //Hats
+//Hats
 	case 1:
 	{
 		if(__GETC__(life_coplevel) == 0) then
@@ -175,16 +172,13 @@ switch (_filter) do
 		};
 		if(__GETC__(life_coplevel) == 8) then
 		{
-			_ret pushBack ["pcapgreen","Sheriff Hat",50];
+			_ret pushBack ["H_Cap_blk","Sheriff Hat",50];
 			_ret pushBack ["H_HelmetB_plain_blk","Ballistic Helmet",50];
 			_ret pushBack ["Vdo_opscore_black_3_peltor","Voodoo Helmet Blk",50];
 			_ret pushBack ["45KOso_helmet_alpha","Sheriff SWAT Helmet",50];
 			_ret pushBack ["H_HelmetB_light_snakeskin","Sheriff SWAT Helmet 2",50];
 		};
-		if(__GETC__(life_coplevel) == 10) then
-		{
-			_ret pushBack ["pcapcorrections","DOC Hat",100];
-		};
+		
 	};
 	
 	//Glasses
@@ -259,15 +253,6 @@ switch (_filter) do
 			_ret pushBack ["Mask_M50","Gas Mask",800];
 		};
 			if(__GETC__(life_coplevel) == 8) then
-		{
-			_ret pushBack ["G_Aviator","Aviators",20];
-			_ret pushBack ["G_B_Diving","Divers Goggles",20];
-			_ret pushBack ["G_Tactical_Clear","Tactical Glasses",20];
-			_ret pushBack ["G_Tactical_Black","Tactical Shades",20];
-			_ret pushBack ["Mask_M50","Gas Mask",800];
-			_ret pushBack ["TRYK_kio_balaclava_ESS","Balaclava & Goggles",20];	
-		};
-			if(__GETC__(life_coplevel) == 10) then
 		{
 			_ret pushBack ["G_Aviator","Aviators",20];
 			_ret pushBack ["G_B_Diving","Divers Goggles",20];
@@ -361,10 +346,6 @@ switch (_filter) do
 			_ret pushBack ["V_PlateCarrier1_PMC_marpat","Sheriff's SWAT Marpat",650];
 			_ret pushBack ["V_RebreatherB","Scuba Gear",600];
 		};
-		if(__GETC__(life_coplevel) == 10) then
-		{
-			_ret pushBack ["TRYK_V_tacv1_P_BK","DOC Vest",100];
-		};
 	};
 	
 	//Backpacks
@@ -382,8 +363,8 @@ switch (_filter) do
 			["B_Bergen_sgg",nil,200],
 			["B_Bergen_rgr_Exp",nil,200],
 			["PMC_B_Carryall_blk",nil,250],
-			["tf_mr3000_bwmod","Long Range Radio",500],
-			["PMC_B_Kitbag_blk","Black Kitbag",1000]
+			["PMC_B_Kitbag_blk","Black Kitbag",1000],
+			["B_Carryall_cbr",nil,250]
 		];
 	};
 };

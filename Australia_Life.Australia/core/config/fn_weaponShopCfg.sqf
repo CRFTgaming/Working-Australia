@@ -32,10 +32,19 @@ switch(_shop) do
 						["Binocular",nil,150],
 						["ToolKit",nil,250],
 						["ItemMap",nil,20],
-					    ["ItemRadio","CellPhone",500],
 						["FirstAidKit",nil,150],
 						["Medikit",nil,500],
-						["pmc_earpiece",nil,1000]
+						["NVGoggles_OPFOR",nil,1000],
+						["V_TacVestIR_blk",nil,400],
+						["TRYK_V_Sheriff_BA_T4","Med Vest OD",400],
+						["TRYK_V_Sheriff_BA_TB4","Med Vest BLK",400],
+						["B_FieldPack_ocamo",nil,200],
+						["TRYK_B_Medbag_ucp",nil,200],
+						["TRYK_B_Medbag_BK",nil,200],
+						["TRYK_B_Medbag",nil,200],
+						["B_Carryall_ocamo",nil,300],
+						["H_PilotHelmetHeli_B",nil,1000],
+						["ItemRadio","CellPhone",500]
 					]
 				];
 			};
@@ -46,20 +55,20 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop! Please see an AFP recruiter about applying."};
+			case (playerSide != west): {"You are not a cop! Please see an APD recruiter about applying."};
 			case (__GETC__(life_coplevel) == 0): 
 			{
 				["APD Public Recruit Weapons",
 					[
-							["ItemGPS",nil,0],
-							["ItemRadio","CellPhone",0],
-							["ItemMap",nil,0],
 							["FirstAidKit",nil,20],
-							["Rangefinder",nil,100],
+							["ItemGPS",nil,0],
 							["Toolkit",nil,200],
-							["pmc_earpiece","Ear Piece NVG",1000],
+							["ItemMap",nil,0],
+							["Rangefinder",nil,100],
+							["NVGoggles_OPFOR","NVG Black",2000],
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
-							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20]
+							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
+							["ItemRadio","CellPhone",0]
 					]
 				];
 			};
@@ -67,13 +76,12 @@ switch(_shop) do
 			{
 				["APD Cadets Weapons",
 					[
-							["ItemGPS",nil,0],
-							["ItemMap",nil,0],
-							["ItemRadio","CellPhone",0],
 							["FirstAidKit",nil,20],
-							["Rangefinder",nil,100],
+							["ItemGPS",nil,0],
 							["Toolkit",nil,200],
-							["pmc_earpiece","Ear Piece NVG",2000],
+							["ItemMap",nil,0],
+							["Rangefinder",nil,100],
+							["NVGoggles_OPFOR","NVG Black",2000],
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
 							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
 							["hgun_mas_m9_F","Beretta M9",1000],
@@ -83,7 +91,8 @@ switch(_shop) do
 							["hgun_mas_glocksf_F","Glock 21",1500],
 							["12Rnd_mas_45acp_Mag","12rd Glock 21 Mag",50],
 							["hgun_mas_acp_F","1911",1500],
-							["8Rnd_mas_45acp_Mag","8rd 1911 Mag",50]
+							["8Rnd_mas_45acp_Mag","8rd 1911 Mag",50],					
+							["ItemRadio","CellPhone",0]
 					]
 				];
 			};
@@ -91,13 +100,12 @@ switch(_shop) do
 			{
 				["APD Patrol Officer Weapons",
 					[
-							["ItemGPS",nil,0],
-							["ItemMap",nil,0],
-							["ItemRadio","CellPhone",0],
 							["FirstAidKit",nil,20],
-							["Rangefinder",nil,100],
+							["ItemGPS",nil,0],
 							["Toolkit",nil,200],
-							["pmc_earpiece","Ear Piece NVG",2000],
+							["ItemMap",nil,0],
+							["Rangefinder",nil,100],
+							["NVGoggles_OPFOR","NVG Black",2000],
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
 							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
 							["hgun_mas_m9_F","Beretta M9",1000],
@@ -149,7 +157,7 @@ switch(_shop) do
 							["optic_ACO_grn_smg",nil,150],
 							["optic_Aco",nil,150],
 							["optic_ACO_grn",nil,150],
-							["optic_mas_acog_eo","ACOG",200]
+							["ItemRadio","CellPhone",0]
 					]
 				];
 			};
@@ -157,13 +165,12 @@ switch(_shop) do
 			{
 				["APD Sergeant Weapons",
 					[
-							["ItemGPS",nil,0],
-							["ItemMap",nil,0],
-							["ItemRadio","CellPhone",0],
 							["FirstAidKit",nil,20],
-							["Rangefinder",nil,100],
+							["ItemGPS",nil,0],
 							["Toolkit",nil,200],
-							["pmc_earpiece","Ear Piece NVG",2000],
+							["ItemMap",nil,0],
+							["Rangefinder",nil,100],
+							["NVGoggles_OPFOR","NVG Black",2000],
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
 							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
 							["hgun_mas_m9_F","Beretta M9",1000],
@@ -217,19 +224,18 @@ switch(_shop) do
 							["muzzle_snds_L",nil,100],
 							["muzzle_snds_H",nil,300],
 							["acc_flashlight",nil,200],
-							["acc_mas_flash_gun",nil,200],
 							["acc_pointer_IR",nil,200],
 							["optic_Aco_smg",nil,150],
 							["optic_ACO_grn_smg",nil,150],
 							["optic_Aco",nil,150],
 							["optic_ACO_grn",nil,150],
 							["optic_Arco",nil,200],
-							["optic_mas_acog_eo","ACOG",200],
 							["optic_Hamr",nil,250],
 							["optic_NVS",nil,1000],
 							["optic_DMS",nil,1000],
 							//Launchers and grenades
-							["HandGrenade_Stone","Flashbang",1000]
+							["HandGrenade_Stone","Flashbang",1000],
+							["ItemRadio","CellPhone",0]
 					]
 				];
 			};
@@ -237,13 +243,12 @@ switch(_shop) do
 			{
 				["APD Lieutenant Weapons",
 					[
-							["ItemGPS",nil,0],
-							["ItemMap",nil,0],
-							["ItemRadio","CellPhone",0],
 							["FirstAidKit",nil,20],
-							["Rangefinder",nil,100],
+							["ItemGPS",nil,0],
 							["Toolkit",nil,200],
-							["pmc_earpiece","Ear Piece NVG",2000],
+							["ItemMap",nil,0],
+							["Rangefinder",nil,100],
+							["NVGoggles_OPFOR","NVG Black",2000],
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
 							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
 							["hgun_mas_m9_F","Beretta M9",1000],
@@ -308,13 +313,11 @@ switch(_shop) do
 							["muzzle_snds_acp",nil,100],
 							["acc_flashlight",nil,200],
 							["acc_pointer_IR",nil,200],
-							["acc_mas_flash_gun",nil,200],
 							["optic_MRD",nil,150],
 							["optic_Aco_smg",nil,150],
 							["optic_ACO_grn_smg",nil,150],
 							["optic_Aco",nil,150],
 							["optic_ACO_grn",nil,150],
-							["optic_mas_acog_eo","ACOG",200],
 							["optic_Arco",nil,200],
 							["optic_MRCO",nil,210],
 							["optic_Hamr",nil,250],
@@ -322,7 +325,8 @@ switch(_shop) do
 							["optic_NVS",nil,1000],
 							["optic_DMS",nil,1000],
 							//Launchers and grenades
-							["HandGrenade_Stone","Flashbang",1000]
+							["HandGrenade_Stone","Flashbang",1000],
+							["ItemRadio","CellPhone",0]
 					]
 				];
 			};
@@ -330,13 +334,12 @@ switch(_shop) do
 			{
 				["APD Captains Weapons",
 					[
-							["ItemGPS",nil,0],
-							["ItemMap",nil,0],
-							["ItemRadio","CellPhone",0],
 							["FirstAidKit",nil,20],
-							["Rangefinder",nil,100],
+							["ItemGPS",nil,0],
 							["Toolkit",nil,200],
-							["pmc_earpiece","Ear Piece NVG",2000],
+							["ItemMap",nil,0],
+							["Rangefinder",nil,100],
+							["NVGoggles_OPFOR","NVG Black",2000],
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
 							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
 							["hgun_mas_m9_F","Beretta M9",1000],
@@ -403,14 +406,12 @@ switch(_shop) do
 							["muzzle_snds_acp",nil,100],
 							["muzzle_snds_H_MG",nil,400],
 							["acc_flashlight",nil,200],
-							["acc_mas_flash_gun",nil,200],
 							["acc_pointer_IR",nil,200],
 							["optic_MRD",nil,150],
 							["optic_Aco_smg",nil,150],
 							["optic_ACO_grn_smg",nil,150],
 							["optic_Aco",nil,150],
 							["optic_ACO_grn",nil,150],
-							["optic_mas_acog_eo","ACOG",200],
 							["optic_Holosight",nil,1700],
 							["optic_AMS",nil,200],
 							["optic_Arco",nil,200],
@@ -420,7 +421,8 @@ switch(_shop) do
 							["optic_DMS",nil,1000],
 							//Launchers and grenades
 							["HandGrenade_Stone","Flashbang",1000],
-							["SmokeShellBlue","Teargas",700]
+							["SmokeShellBlue","Teargas",700],
+							["ItemRadio","CellPhone",0]
 					]
 				];
 			};
@@ -428,13 +430,12 @@ switch(_shop) do
 			{
 				["APD SWAT Arsenal",
 					[
-							["ItemGPS",nil,0],
-							["ItemMap",nil,0],
-							["ItemRadio","CellPhone",0],
 							["FirstAidKit",nil,20],
-							["Rangefinder",nil,100],
+							["ItemGPS",nil,0],
 							["Toolkit",nil,200],
-							["pmc_earpiece","Ear Piece NVG",2000],
+							["ItemMap",nil,0],
+							["Rangefinder",nil,100],
+							["NVGoggles_OPFOR","NVG Black",2000],
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
 							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
 							["30Rnd_65x39_caseless_mag_Tracer","Rubber Bullets",100],
@@ -502,14 +503,12 @@ switch(_shop) do
 							["muzzle_snds_acp",nil,100],
 							["muzzle_snds_H_MG",nil,400],
 							["acc_flashlight",nil,200],
-							["acc_mas_flash_gun",nil,200],
 							["acc_pointer_IR",nil,200],
 							["optic_MRD",nil,150],
 							["optic_Aco_smg",nil,150],
 							["optic_ACO_grn_smg",nil,150],
 							["optic_Aco",nil,150],
 							["optic_ACO_grn",nil,150],
-							["optic_mas_acog_eo","ACOG",200],
 							["optic_Holosight",nil,1700],
 							["optic_AMS",nil,200],
 							["optic_Arco",nil,200],
@@ -522,7 +521,8 @@ switch(_shop) do
 							["optic_LRPS",nil,1200],
 							//Launchers and grenades
 							["HandGrenade_Stone","Flashbang",1000],
-							["SmokeShellBlue","Teargas",700]
+							["SmokeShellBlue","Teargas",700],
+							["ItemRadio","CellPhone",0]
 					]
 				];
 			};
@@ -535,9 +535,7 @@ switch(_shop) do
 							["Toolkit",nil,200],
 							["ItemMap",nil,0],
 							["Rangefinder",nil,100],
-							["ItemRadio","CellPhone",0],
 							["NVGoggles_OPFOR","NVG Black",2000],
-							["pmc_earpiece","Ear Piece NVG",2000],
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
 							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
 							["hgun_mas_m9_F","Beretta M9",1000],
@@ -617,7 +615,6 @@ switch(_shop) do
 							["optic_ACO_grn_smg",nil,150],
 							["optic_Aco",nil,150],
 							["optic_ACO_grn",nil,150],
-							["optic_mas_acog_eo","ACOG",200],
 							["optic_Holosight",nil,1700],
 							["optic_Arco",nil,200],
 							["optic_MRCO",nil,210],
@@ -628,67 +625,9 @@ switch(_shop) do
 							["optic_SOS",nil,1200],
 							["optic_LRPS",nil,1200],
 							//Launchers and grenades
-							["arifle_MX_GL_Black_F","Non-Lethal Rifle",2500],
-							["30Rnd_65x39_caseless_mag_Tracer","Rubber Bullets",100],
-							["1Rnd_SmokeBlue_Grenade_shell","GL TearGas",50],
 							["HandGrenade_Stone","Flashbang",1000],
-							["SmokeShellBlue","Teargas",700]
-					]
-				];
-			};
-			case (__GETC__(life_coplevel) == 10):
-			{
-				["DOC Weapons",
-					[
-							["ItemGPS",nil,0],
-							["ItemMap",nil,0],
-							["ItemRadio","CellPhone",0],
-							["FirstAidKit",nil,20],
-							["Rangefinder",nil,100],
-							["Toolkit",nil,200],
-							["pmc_earpiece","Ear Piece NVG",2000],
-							// NON LETHAL
-							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
-							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
-							["arifle_MX_GL_Black_F","Non-Lethal Rifle",2500],
-							["30Rnd_65x39_caseless_mag_Tracer","Rubber Bullets",100],
-							["1Rnd_SmokeBlue_Grenade_shell","GL TearGas",50],
-							// LETHAL
-							["hgun_mas_m9_F","Beretta M9",1000],
-							["15Rnd_mas_9x21_Mag","15rd Beretta Mag",50],
-							["hgun_mas_glock_F","Glock 17",1000],
-							["15Rnd_mas_9x21_Mag","15rd Glock 17 Mag",50],
-							["hgun_mas_glocksf_F","Glock 21",1500],
-							["12Rnd_mas_45acp_Mag","12rd Glock 21 Mag",50],
-							["hgun_mas_acp_F","1911",1500],
-							["8Rnd_mas_45acp_Mag","8rd 1911 Mag",50],
-							["arifle_mas_mp5","MP5A5",1500],
-							["30Rnd_mas_9x21_Stanag","MP5A5 mag",70],
-							["PMC_m4","M4 Carbine",3000],
-							["30Rnd_556x45_Stanag","M4 Carbine mag",90],
-							["srifle_mas_m24","M24 Rifle",4000],
-							["5Rnd_mas_762x51_Stanag","5rd M24 Mag",100],
-							//attachments
-							["bipod_01_F_blk",nil,300],
-							["bipod_02_F_blk",nil,300],
-							["bipod_03_F_blk",nil,300],
-							["muzzle_snds_L",nil,100],
-							["muzzle_snds_H",nil,300],
-							["acc_flashlight",nil,200],
-							["acc_mas_flash_gun",nil,200],
-							["acc_pointer_IR",nil,200],
-							["optic_Aco_smg",nil,150],
-							["optic_ACO_grn_smg",nil,150],
-							["optic_Aco",nil,150],
-							["optic_ACO_grn",nil,150],
-							["optic_mas_acog_eo","ACOG",200],
-							["optic_Arco",nil,200],
-							["optic_Hamr",nil,250],
-							["optic_NVS",nil,1000],
-							["optic_DMS",nil,1000],
-							// HAND GRENADES
-							["HandGrenade_Stone","Flashbang",1000],
-							["SmokeShellBlue","Teargas",700]
+							["SmokeShellBlue","Teargas",700],
+							["ItemRadio","CellPhone",500]
 					]
 				];
 			};
@@ -702,15 +641,19 @@ switch(_shop) do
 			case (playerSide != west): {"You are not a Deputy! Please see the sheriff about applying."};
 			case (__GETC__(life_coplevel) == 8): 
 			{
-				["Australian Sheriff's Equipment",
+				["Bornholm Sheriff's Equipment",
 					[
 							["ItemGPS",nil,0],
+							["Toolkit",nil,200],
 							["ItemMap",nil,0],
 							["ItemRadio","CellPhone",0],
 							["FirstAidKit",nil,20],
 							["Rangefinder",nil,100],
-							["Toolkit",nil,200],
-							["pmc_earpiece","Ear Piece NVG",2000]
+							["Laserdesignator_02","Radar Gun",100],
+							["pmc_earpiece","NVG Ear Piece",1500],
+							["NVGoggles_OPFOR","NVG Black",2000],
+							["NVGoggles","NVG Brown",2000],
+							["NVGoggles_INDEP","NVG Green",2000]
 					]
 				];
 			};
@@ -723,7 +666,7 @@ switch(_shop) do
 			case (playerSide != west): {"You are not a Deputy! Please see the sheriff about applying."};
 			case (__GETC__(life_coplevel) == 8): 
 			{
-				["Australian Sheriff's Armory",
+				["Bornholm Sheriff's Armory",
 					[
 							["DDOPP_X26","Yellow X-26 Tazer Pistol",500],
 							["DDOPP_1Rnd_X26","X-26 Tazer Rounds",20],
@@ -766,7 +709,6 @@ switch(_shop) do
 							["muzzle_snds_acp",nil,100],
 							["muzzle_snds_H_MG",nil,400],
 							["acc_flashlight",nil,200],
-							["acc_mas_flash_gun",nil,200],
 							["acc_pointer_IR",nil,200],
 							["bipod_01_F_blk",nil,300],
 							["bipod_02_F_blk",nil,300],
@@ -821,27 +763,27 @@ switch(_shop) do
 							["12Rnd_mas_45acp_Mag","12rd USP Mag",100],
 							["hgun_mas_glocksf_F","Glock 21",1100],
 							["12Rnd_mas_45acp_Mag","12rd Glock 21 Mag",100],
-							//SMG
+							//SMG						
 							["arifle_mas_mp5_sd","MP5 SD",3000],
-							["30Rnd_mas_9x21_Stanag","30rd MP5 Mag",100],
-							//M4 Variants
+							["30Rnd_mas_9x21_Stanag","30rd MP5 Mag",100],							
+							//M4 Variants					
 							["arifle_mas_hk416","HK416",3500],
-							["30Rnd_mas_556x45_Stanag","HK416 30RD Mag",100],
+							["30Rnd_mas_556x45_Stanag","HK416 30RD Mag",100],							
 							["arifle_mas_hk416_gl","HK416 GL",3500],
 							["30Rnd_mas_556x45_Stanag","HK416 30RD Mag",100],
-							["UGL_FlareWhite_F","1Rd White Flare",25],
+							["UGL_FlareWhite_F","1Rd White Flare",25],							
 							["arifle_mas_hk417c","HK417 CQB",3500],
-							["20Rnd_mas_762x51_Stanag","HK417 20RD Mag",100],
+							["20Rnd_mas_762x51_Stanag","HK417 20RD Mag",100],						
 							["arifle_mas_hk417_m203c","HK417 GL CQB",3500],
 							["20Rnd_mas_762x51_Stanag","HK417 20RD Mag",100],
-							["UGL_FlareWhite_F","1Rd White Flare",25],
+							["UGL_FlareWhite_F","1Rd White Flare",25],							
 							["arifle_mas_l119","L119 Rifle",3500],
-							["30Rnd_mas_556x45_Stanag","L119 30rd Mag",100],
+							["30Rnd_mas_556x45_Stanag","L119 30rd Mag",100],							
 							["arifle_mas_arx","AR-X",3500],
-							["30Rnd_mas_556x45_Stanag","AR-X 30rd Mag",100],
+							["30Rnd_mas_556x45_Stanag","AR-X 30rd Mag",100],							
 							["arifle_mas_arx_l","AR-X Long Barrel",3500],
 							["30Rnd_mas_556x45_Stanag","AR-X 30rd Mag",100],
-							//Long Range
+							//Long Range					
 							["srifle_mas_m24","M24 Rifle",4000],
 							["5Rnd_mas_762x51_Stanag","5rd M24 Mag",100],
 							["srifle_mas_lrr","LRR Rifle",4000],
@@ -871,13 +813,12 @@ switch(_shop) do
 			{
 				["Mohammed's Equipment Shop",
 					[
-						["ItemGPS",nil,0],
 						["ItemMap",nil,0],
 						["ItemRadio","CellPhone",0],
-						["FirstAidKit",nil,20],
+						["ItemGPS",nil,100],
 						["Rangefinder",nil,100],
 						["Toolkit",nil,200],
-						["pmc_earpiece","Ear Piece NVG",2000],
+						["pmc_earpiece","NVG Ear Piece",1500],
 						["NVGoggles_OPFOR","NVG Black",2000],
 						["NVGoggles","NVG Brown",2000],
 						["NVGoggles_INDEP","NVG Green",2000]
@@ -902,7 +843,7 @@ switch(_shop) do
 						["hgun_mas_grach_F","Grach",500],
 						["15Rnd_mas_9x21_Mag","15rd Grach Mag",50],
 						["hgun_mas_glock_F","Glock 17",500],
-						["15Rnd_mas_9x21_Mag","15rd Glock 17 Mag",50],
+						["15Rnd_mas_9x21_Mag","15rd Glock 17 Mag",50],	
 						["hgun_mas_glocksf_F","Glock 21",500],
 						["12Rnd_mas_45acp_Mag","12rd Glock 21 Mag",50],
 						["hgun_mas_uzi_F","UZI",1250],
@@ -914,24 +855,24 @@ switch(_shop) do
 						["arifle_mas_saiga","Saiga 12g",2000],
 						["10Rnd_mas_12Gauge_Slug","10rd Saiga Mag",100],
 						["arifle_mas_ak_74m","AK 74",2500],
-						["30Rnd_mas_545x39_mag","30rd Ak74 Mag",100],
+						["30Rnd_mas_545x39_mag","30rd Ak74 Mag",100],			
 						["arifle_mas_m70","M70",2500],
-						["30Rnd_mas_762x39_mag","30rd M70 Mag",100],
+						["30Rnd_mas_762x39_mag","30rd M70 Mag",100],				
 						["arifle_mas_ak_74m","AK 74",2500],
-						["30Rnd_mas_545x39_mag","30rd Ak74 Mag",100],
+						["30Rnd_mas_545x39_mag","30rd Ak74 Mag",100],					
 						["arifle_mas_g3","G3",2500],
-						["20Rnd_mas_762x51_Stanag","20rd G3 Mag",100],
+						["20Rnd_mas_762x51_Stanag","20rd G3 Mag",100],					
 						["arifle_mas_g3s","G3",2500],
-						["20Rnd_mas_762x51_Stanag","20rd G3 Mag",100],
+						["20Rnd_mas_762x51_Stanag","20rd G3 Mag",100],						
 						["arifle_mas_g36c","G36C",2500],
-						["30Rnd_mas_556x45_Stanag","30rd G36C Mag",100],
+						["30Rnd_mas_556x45_Stanag","30rd G36C Mag",100],						
 						["arifle_mas_mk16","SCAR Mk16",3500],
-						["30Rnd_mas_556x45_Stanag","30rd SCAR Mag",100],
+						["30Rnd_mas_556x45_Stanag","30rd SCAR Mag",100],						
 						["arifle_mas_mk16_gl","SCAR Mk16 GL",4000],
 						["30Rnd_mas_556x45_Stanag","30rd SCAR Mag",100],
-						["UGL_FlareWhite_F","1rd Flare Mag",25],
+						["UGL_FlareWhite_F","1rd Flare Mag",25],						
 						["arifle_mas_mk16_l","SCAR Mk16 Long Barrel",4000],
-						["30Rnd_mas_556x45_Stanag","30rd SCAR Mag",100],
+						["30Rnd_mas_556x45_Stanag","30rd SCAR Mag",100],						
 						["arifle_mas_mk17","SCAR Mk17",4500],
 						["20Rnd_mas_762x51_Stanag","20rd SCAR Mag",100],						
 						["srifle_mas_svd","SVD Rifle",4500],
