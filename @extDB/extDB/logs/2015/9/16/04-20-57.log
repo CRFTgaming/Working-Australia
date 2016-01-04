@@ -1,0 +1,13 @@
+[21:20:57 --7:00] [Thread 3595770607] extDB: Version: 35
+[21:20:57 --7:00] [Thread 3595770607] extDB: Windows Version
+[21:20:57 --7:00] [Thread 3595770607] Message: Arma Linux Servers are using Older Physic Library (than Windows Servers), due to Debian 7 using old version of Glibc
+[21:20:57 --7:00] [Thread 3595770607] Message: If you like extDB consider donating or bug BIS to drop support for Debian 7 thanks, so Linux Servers get same Physic Library Version as Windows
+[21:20:57 --7:00] [Thread 3595770607] Message: Note currently most/all development for extDB is done on a Linux Server
+[21:20:57 --7:00] [Thread 3595770607] Message: Torndeco: 24/01/15
+[21:20:57 --7:00] [Thread 3595770607] 
+[21:20:57 --7:00] [Thread 3595770607] extDB: Found extdb-conf.ini
+[21:20:57 --7:00] [Thread 3595770607] extDB: Detected 8 Cores, Setting up 6 Worker Threads
+[21:20:57 --7:00] [Thread 3595770607] extDB: Database Type: MySQL
+[21:20:58 --7:00] [Thread 3595770607] extDB: Database Exception Error: Connection attempt failed: Unknown database 'arma3life'
+[21:21:58 --7:00] [Thread 3595770607] extDB: Unknown Protocol: 8773
+[21:22:15 --7:00] [Thread 3595770607] extDB: Stopping ...

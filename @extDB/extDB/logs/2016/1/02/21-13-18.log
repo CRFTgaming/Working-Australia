@@ -1,0 +1,15 @@
+[16:13:18 --4:00] [Thread 2129547688] extDB: Version: 35
+[16:13:18 --4:00] [Thread 2129547688] extDB: Windows Version
+[16:13:18 --4:00] [Thread 2129547688] Message: Arma Linux Servers are using Older Physic Library (than Windows Servers), due to Debian 7 using old version of Glibc
+[16:13:18 --4:00] [Thread 2129547688] Message: If you like extDB consider donating or bug BIS to drop support for Debian 7 thanks, so Linux Servers get same Physic Library Version as Windows
+[16:13:18 --4:00] [Thread 2129547688] Message: Note currently most/all development for extDB is done on a Linux Server
+[16:13:18 --4:00] [Thread 2129547688] Message: Torndeco: 24/01/15
+[16:13:18 --4:00] [Thread 2129547688] 
+[16:13:18 --4:00] [Thread 2129547688] extDB: Found extdb-conf.ini
+[16:13:18 --4:00] [Thread 2129547688] extDB: Detected 8 Cores, Setting up 6 Worker Threads
+[16:13:18 --4:00] [Thread 2129547688] extDB: Database Type: MySQL
+[16:13:18 --4:00] [Thread 2129547688] extDB: Database Session Pool Started
+[16:13:18 --4:00] [Thread 2129547688] extDB: DB_RAW_V3: Initialized: ADD_QUOTES True
+[16:13:39 --4:00] [Thread 130776190] extDB: DB_RAW_V3: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Unknown column 'civ_prof' in 'field list'	[mysql_stmt_errno]: 1054	[mysql_stmt_sqlstate]: 42S22	[statemnt]: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, civ_prof FROM players WHERE playerid='76561197966618733'
+[16:13:39 --4:00] [Thread 130776190] extDB: DB_RAW_V3: Error StatementException: SQL: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, civ_prof FROM players WHERE playerid='76561197966618733'
+[16:15:43 --4:00] [Thread 2129547688] extDB: Stopping ...

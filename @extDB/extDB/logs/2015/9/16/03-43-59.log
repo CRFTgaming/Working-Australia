@@ -1,0 +1,17 @@
+[20:43:59 --7:00] [Thread 3410187951] extDB: Version: 35
+[20:43:59 --7:00] [Thread 3410187951] extDB: Windows Version
+[20:43:59 --7:00] [Thread 3410187951] Message: Arma Linux Servers are using Older Physic Library (than Windows Servers), due to Debian 7 using old version of Glibc
+[20:43:59 --7:00] [Thread 3410187951] Message: If you like extDB consider donating or bug BIS to drop support for Debian 7 thanks, so Linux Servers get same Physic Library Version as Windows
+[20:43:59 --7:00] [Thread 3410187951] Message: Note currently most/all development for extDB is done on a Linux Server
+[20:43:59 --7:00] [Thread 3410187951] Message: Torndeco: 24/01/15
+[20:43:59 --7:00] [Thread 3410187951] 
+[20:43:59 --7:00] [Thread 3410187951] extDB: Found extdb-conf.ini
+[20:43:59 --7:00] [Thread 3410187951] extDB: Detected 8 Cores, Setting up 6 Worker Threads
+[20:43:59 --7:00] [Thread 3410187951] extDB: Database Type: MySQL
+[20:43:59 --7:00] [Thread 3410187951] extDB: Database Session Pool Started
+[20:43:59 --7:00] [Thread 3410187951] extDB: DB_RAW_V3: Initialized: ADD_QUOTES True
+[20:44:00 --7:00] [Thread 3179705186] extDB: DB_RAW_V3: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_execute error	[mysql_stmt_error]: The user specified as a definer ('arma3'@'localhost') does not exist	[mysql_stmt_errno]: 1449	[mysql_stmt_sqlstate]: HY000	[statemnt]: CALL resetLifeVehicles
+[20:44:00 --7:00] [Thread 3179705186] extDB: DB_RAW_V3: Error StatementException: SQL: CALL resetLifeVehicles
+[20:44:11 --7:00] [Thread 1172867225] extDB: DB_RAW_V3: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Unknown column 'civ_prof' in 'field list'	[mysql_stmt_errno]: 1054	[mysql_stmt_sqlstate]: 42S22	[statemnt]: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, civ_prof FROM players WHERE playerid='76561197966618733'
+[20:44:11 --7:00] [Thread 1172867225] extDB: DB_RAW_V3: Error StatementException: SQL: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, civ_prof FROM players WHERE playerid='76561197966618733'
+[20:48:52 --7:00] [Thread 3410187951] extDB: Stopping ...
