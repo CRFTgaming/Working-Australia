@@ -17,26 +17,30 @@ switch (_side) do
 {
 	case west:
 	{
-		if(__GETC__(life_coplevel) == 8) then // Vehicles available to cops level 1 or higher.
+		if(__GETC__(life_coplevel) == 8) then // Vehicles available to cops level 8 or higher.
    		{
    			_return = [
    				["cop_spawn_5","Sheriff's Alice Springs HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-   				["cop_spawn_8","Sheriff's Broken Hill HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"]
+   				["cop_spawn_8","Sheriff's Broken Hill HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+   				["cop_spawn_3","Adelaide Joint HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"]
    			];
    		};
 
-   		if(__GETC__(life_coplevel) == 9) then // Vehicles available to cops level 1 or higher.
+   		if(__GETC__(life_coplevel) == 9) then // Vehicles available to cops level 9 or higher.
    		{
    			_return = [
    				["cop_spawn_5","Sheriff's Alice Springs HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-   				["cop_spawn_8","Sheriff's Broken Hill HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"]
+   				["cop_spawn_8","Sheriff's Broken Hill HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+   				["cop_spawn_3","Adelaide Joint HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"]
    			];
    		};
 
-   		if(__GETC__(life_coplevel) == 10) then // Vehicles available to cops level 1 or higher.
+   		if(__GETC__(life_coplevel) == 10) then // Vehicles available to cops level 10 or higher.
    		{
    			_return = [
-   				["police_jail_3","Department of Corrections","\a3\ui_f\data\map\Markers\NATO\b_air.paa"]
+   				["police_jail_3","Department of Corrections","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+   				["cop_doc_1","DOC Willcania HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+   				["cop_doc_2","DOC Sydney HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"]
    			];
    		};
 
@@ -49,7 +53,7 @@ switch (_side) do
 				["cop_spawn_4","Darwin HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
 				["cop_spawn_6","Brisbane HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
 				["cop_spawn_7","Launceston HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-				["cop_spawn_9","Swat HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+				["cop_spawn_9","SWAT HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
 				["cop_spawn_10","Perth HQ","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
 			];
 		};
@@ -61,9 +65,9 @@ switch (_side) do
 		if(license_civ_rebel && playerSide == civilian) then {
 			_return = [
 				["Rebelop","Rbl. Airfield","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["Rebelop_2","East Rebel Outpost","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["Rebelop_2","Southern Rebel Outpost","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_1","Sydney","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["Rebelop_1","Raghammer Rebel Compound","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+				["Rebelop_1","Northern Rebel Compound","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 			];
 		};
 
@@ -182,12 +186,12 @@ switch (_side) do
 		_return = [
 			["medic_spawn_1","Sydney Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
 			["medic_spawn_2","Melbourne Medical","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_2","Darwin Medical","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_2","Perth Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_2","Adelaide Medical","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_2","Brisbane Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_2","Alice Springs Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_3","Hobart Medical","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
+			["medic_spawn_3","Darwin Medical","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_4","Perth Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_5","Adelaide Medical","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_6","Brisbane Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_7","Alice Springs Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_8","Hobart Medical","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
 		];
 	};
 };
